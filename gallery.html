@@ -1,0 +1,86 @@
+<!doctype html>
+<!--
+Steven C. Cox II
+February 12, 2025
+index.html
+This is my Gallery page
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!--linking to the CSS style sheet-->
+        <link href="scoxstyles.css" rel="stylesheet" />
+
+        <title>Steve Cox</title>
+        <!-- This is what will appear in the browser tab -->
+
+        <!--styles defined in CSS style sheet-->
+    </head>
+    <body>
+        <header>
+            <img src="Slogo.jpg" alt="My Logo" height="52" width="52" />
+            <!-- My logo, if file isn't found the alt text will show instead -->
+            <h1>Steves Personal Website</h1>
+        </header>
+        <nav>
+            <!-- this nav bar will be on all of the pages.  links will be updated as needed -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="interests.html">My Interests</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>My Gallery</h2>
+            <!-- This will appear in the size of h2 -->
+            <!--using the responsive class defined in CSS style sheet for enlarging on click-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="Sgolf-1024x768.jpg">
+                        <img src="Sgolf-1024x768.jpg" alt="golfing" />
+                    </a>
+                    <div class="desc">I enjoy golfing</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <div class="gallery">
+                        <a target="_blank" href="SMusic-1024x768.jpg">
+                            <img src="SMusic-1024x768.jpg" alt="music" />
+                        </a>
+                        <div class="desc">I enjoy listening to music</div>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="kids-1024x768.jpg">
+                        <img src="kids-1024x768.jpg" alt="kids" />
+                    </a>
+                    <div class="desc">I enjoy spending time with my grandchildren</div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+            <!--inserting a short YouTube link to a golf video using iframe-->
+            <figcaption>Here is a video of a golf swing</figcaption>
+            <iframe width="420" height="315" src="https://www.youtu.be.com/embed/tnIVuvQoSNY" title="Golf Swing">
+            </iframe>
+            <!--inserting an MP3 file player for sample of music-->
+            <figcaption>A sample of the music I enjoy</figcaption>
+            <figure>
+                <div>
+                    <audio controls>
+                        <source src="energetic-hip-hop-8303.mp3" type="audio/mpeg" />
+                    </audio>
+                </div>
+            </figure>
+            <br />
+            <br />
+        </main>
+        <footer>Copyright Steven C. Cox II<br /></footer>
+    </body>
+</html>

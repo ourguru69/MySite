@@ -1,0 +1,166 @@
+/* Styling attributes for Steves Website
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b68383;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headlines */
+h1,
+h2 {
+    color: #f20909;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #b68383;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Body Text */
+p {
+    color: #bf1111;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Background */
+body {
+    background-color: #b68383;
+    background-size: cover;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #e38282;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+/* Anchor Links */
+a {
+    color: #bf1111;
+    text-decoration: none;
+}
+a:current {
+    color: aquamarine;
+}
+a:hover {
+    color: #45a049;
+}
+
+a:visited {
+    color: #9c27b0;
+}
+
+/* Style the image container */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hide the enlarged image by default */
+.image-container .enlarged-image {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Show the enlarged image on hover */
+.image-container:checked .enlarged-image {
+    display: block;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/*Defining on click for images*/
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

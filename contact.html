@@ -1,0 +1,115 @@
+<!doctype html>
+<!--
+Steven C. Cox II
+February 12, 2025
+index.html
+This is my Contact page
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link href="scoxstyles.css" rel="stylesheet" />
+        <!--linking to the CSS style sheet -->
+        <title>Steve Cox</title>
+        <!-- This is what will appear in the browser tab -->
+        <style>
+            <!--defining table for contact methods-- > table,
+            th,
+            td {
+                border: 1px solid #0f0e0f;
+            }
+            table {
+                border-collapse: collapse;
+                background-color: #f4a7b6;
+            }
+            th {
+                height: 30px;
+                width: 150px;
+            }
+            td {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="Slogo.jpg" alt="My Logo" height="52" width="52" />
+            <!-- My logo, if file isn't found the alt text will show instead -->
+            <h1>Steves Personal Website</h1>
+        </header>
+        <nav>
+            <!-- this nav bar will be on all of the pages.  links will be updated as needed -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="interests.html">My Interests</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        <main>
+            <!--contact methods table-->
+            <h2>Contact Me</h2>
+            <table style="width: 100%">
+                <tr>
+                    <th style="width: 10%">Method</th>
+                    <th style="width: 45%">How to reach me</th>
+                </tr>
+
+                <tr>
+                    <td>Phone</td>
+                    <td>(216) 800-1590</td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td>email@example.com</td>
+                </tr>
+            </table>
+
+            <section>
+                <br /><br />
+                <!--<form action="response_page.js.php" method="post" target="_blank" id="contact">-->
+                <form method="post">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" /><br /><br />
+                        <label>Gender:</label><br />
+                        <input type="radio" id="male" name="gender" value="male" />
+                        <label for="male">Male</label><br />
+                        <input type="radio" id="female" name="gender" value="female" />
+                        <label for="female">Female</label><br /><br />
+
+                        <label for="hobbies">Hobbies:</label><br />
+                        <input type="checkbox" id="coding" name="hobbies" value="coding" />
+                        <label for="coding">Coding</label><br />
+                        <input type="checkbox" id="reading" name="hobbies" value="reading" />
+                        <label for="reading">Reading</label><br /><br />
+
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="usa">USA</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">UK</option>
+                        </select>
+                    </fieldset>
+                    <textarea id="comments" name="comments" rows="4" cols="50">
+                        Enter your message here
+                    </textarea
+                    ><br />
+                    <!-- when the submit bttons is clicked popup a message-->
+                    <button onclick="myalert()">Submit</button>
+
+                    <script>
+                        function myalert() {
+                            alert("Thank you for your submission");
+                        }
+                    </script>
+                </form>
+            </section>
+        </main>
+        <footer>Copyright Steven C. Cox II<br /></footer>
+    </body>
+</html>

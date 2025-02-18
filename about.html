@@ -1,0 +1,86 @@
+<!doctype html>
+<!--
+Steven C. Cox II
+February 12, 2025
+index.html
+This is my About Me page
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link href="scoxstyles.css" rel="stylesheet" />
+        <!--linking to the CSS style sheet -->
+        <title>Steve Cox</title>
+        <!-- This is what will appear in the browser tab -->
+        <!--defining table for children table-->
+        <style>
+            table,
+            th,
+            td {
+                border: 1px solid #0f0e0f;
+            }
+            table {
+                border-collapse: collapse;
+                background-color: #f4a7b6;
+            }
+            th {
+                height: 30px;
+                width: 150px;
+            }
+            td {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="Slogo.jpg" alt="My Logo" height="52" width="52" />
+            <!-- My logo, if file isn't found the alt text will show instead -->
+            <h1>Steves Personal Website</h1>
+        </header>
+        <nav>
+            <!-- this nav bar will be on all of the pages.  links will be updated as needed -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="interests.html">My Interests</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>About Me</h2>
+            <table style="width: 100%">
+                <!--children table-->
+                <caption style="font-size: 20px">
+                    My Children
+                </caption>
+                <tr>
+                    <th style="width: 10%">Age</th>
+                    <th style="width: 45%">First Name</th>
+                    <th style="width: 45%">Last Name</th>
+                </tr>
+
+                <tr>
+                    <td>32</td>
+                    <td>Brandi</td>
+                    <td>Cretz</td>
+                </tr>
+
+                <tr>
+                    <td>30</td>
+                    <td>Steve</td>
+                    <td>Cox III</td>
+                </tr>
+
+                <tr>
+                    <td>28</td>
+                    <td>Tiffany</td>
+                    <td>Cox</td>
+                </tr>
+            </table>
+        </main>
+        <footer>Copyright Steven C. Cox II<br /></footer>
+    </body>
+</html>
